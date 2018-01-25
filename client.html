@@ -1,46 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Owl Realms - Web Client</title>
+<link rel="stylesheet" href="bledixon.github.io/webclient/css/hub2.css" />
+<link rel="shortcut icon" href="css/favicon.gif" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-	<head>
-		<title></title>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-		<script type="text/javascript">
-			swfobject.registerObject("flashContent", "28.0.0");
-		</script>
-	</head>
-	<body>
-    <title> Owl Realms Webclient (HTML) </title>
-<p> Welcome! </p>
-  <script src="https://www.realmofthemadgod.com/js/rotmg.UrlLib.js"></script>
-		<div>
-			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="640" height="480" id="flashContent"  name="" class="" align="">
-				<param name="movie" value="client.swf" />
-				<param name="bgcolor" value="#FFFFFF" />
-				<param name="play" value="true" />
-				<param name="quality" value="best" />
-				<param name="fullscreenonselection" value="true" />
-				<param name="allowfullscreen" value="true" />
-				<param name="allownetworking" value="all" />
-				
-				<param name="flashvars" value="" />
-				  				
-				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" data="client.swf" width="640" height="480" class="" align="">
-				<param name="bgcolor" value="#FFFFFF" />
-				<param name="play" value="true" />
-				<param name="quality" value="best" />
-				<param name="fullscreenonselection" value="true" />
-				<param name="allowfullscreen" value="true" />
-				<param name="allownetworking" value="all" />
-				
-				<param name="flashvars" value="" />				
-				<!--<![endif]-->
-					Get <a href="http://www.adobe.com/go/getflash">Adobe Flash Player</a>. Embedded with the help of <a href="http://embed-swf.org">embed-swf.org</a>.
-				<!--[if !IE]>-->
-				</object>
-				<!--<![endif]-->
-			</object>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  TriggerClick = 0;
+  $("#slidetrigger").click(function(){
+    if(TriggerClick==0){
+         TriggerClick=1;
+         $("div#mainwrap").animate({width:'1600px'}, 300);
+    }else{
+         TriggerClick=0;
+         $("div#mainwrap").animate({width:'800px'}, 300);
+    };
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  TriggerClick = 0;
+  $("#triggersmall").click(function(){
+    if(TriggerClick==0){
+         TriggerClick=1;
+         $("div#mainwrap").animate({width:'1600px'}, 300);
+         $("div#shadow").animate({width:'1600px'}, 300);
+    }else{
+         TriggerClick=0;
+         $("div#mainwrap").animate({width:'800px'}, 300);
+         $("div#shadow").animate({width:'800px'}, 300);
+    };
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$('body').css({'margin-top':((($(document).height())-664)/2)+'px'});
+
+	$(window).resize(function(){
+	$('body').css({'margin-top':((($(document).height())-664)/2)+'px'});
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#dark").click(function () {
+        $('head').append('<link rel="stylesheet" href="http://bledixon.github.io/webclient/css/hub2.css" type="text/css" />');
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#light").click(function () {
+        $('head').append('<link rel="stylesheet" href="http://bledixon.github.io/webclient/css/hub2.css" type="text/css" />');
+    });
+});
+</script>
+
+</head>
+<body>
+
+<center>
+
+<table id="secondwrap" cellpadding="0" cellspacing="0" border="0"><tr><td>
+	<div id="mainwrap">
+	<table cellpadding="0" cellspacing="0" border="0"><tr><td>
+	<div id="gamebox">
+		<div id="gametitle">
+			<span class="title">Owl Realms <i>// Hub</i></span><div id="triggersmall" title="Toggle Hub"></div>
 		</div>
-	</body>
+		<div class="hline"></div>
+		<div id="gamewindow1">
+  		    <script src='http://www.realmofthemadgod.com/js/rotmg.UrlLib.js'></script>
+			<embed src='http://owl120.github.io/client.swf' width='800' height='600'>
+		</div>
+		<a href="http://owl120.github.io/client.html" >Refresh game window</a>
+		<a href="http://owl120.github.io/play.html">SERVER 2</a>
+	</div>
+	</td><td>
+	<div id="tabbox">
+		<div id="tabnav"><a href="#tab1"><div id="t1" title="Hub Info"></div></a><a href="#tab2"><div id="t2" title="New Game Window"></div></a><a href="#tab3"><div id="t3" title="IRC Chat"></div></a><a href="#tab4"><div id="t4" title="Wild Shadow Forums"></div></a><a href="#tab5"><div id="t5" title="ROTMG//CLASSIFIEDS"></div></a></div>
+		<div id="tabwrap">
+			<div class="tabcontent">
+			<a name="tab1"></a>
+				<div id="tab1content">
+					<span class="title">Owl Realms</span>
+
+<div class="hcontline"></div>
+
+<div style="float:left;">
+  <!-- <iframe name="realmfeed" style="margin-top:10px" src="http://realmtools.com/realmfeed/index.php?server=all&mode=light" width="363" height="340" frameborder="0" scrolling="no" allowtransparency="true"></iframe> -->
+</div>
+<div style="float:right; width:380px;">
+<p><br />
+Modes:<br />
+<table cellspacing="15" cellpadding="0" border="0">
+<tr>
+<td align="center">
+  <!-- <a href="http://realmtools.com/realmfeed/index.php?server=all&mode=light" target="realmfeed"> -->
+    <img src="css/light.png" border="0" id="light" style="cursor:pointer;" />
+  <!-- </a> -->
+</td>
+<td align="center">
+  <!-- <a href="http://realmtools.com/realmfeed/index.php?server=all&mode=night" target="realmfeed"> -->
+    <img src="css/dark.png" border="0" id="dark" style="cursor:pointer;" />
+  <!-- </a> -->
+</td>
+</tr>
+<tr>
+<td align="center">Day Mode</td>
+<td align="center">Night Mode</td>
+</tr>
+</table>
+</p>
+<div class="hcontline" style="width:380px !important;"></div>
+<p><br /><b>PLACEHOLDER<a href="http://realmtools.com/info_qs.html" target="_blank">#1</a></b></p>
+<div class="hcontline" style="width:380px !important;"></div>
+<p><br />Flash player link:</p>
+<p><br />client.swf</p>
+<div class="hcontline" style="width:380px !important;"></div>
+</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	</td></tr></table>
+	</div>
+</td><td>
+</div>
+</td></td></table>
+<div id="shadow"></div>
+</center>
+<center>	<p align="right"><iframe src="https://discordapp.com/widget?id=220339661879508992&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></p></center>
+</body>
 </html>
