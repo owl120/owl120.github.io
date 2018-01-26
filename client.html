@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Owl Realms - Web Client</title>
-<link rel="stylesheet" href="bledixon.github.io/webclient/css/hub2.css" />
+<link rel="stylesheet" href="css/hub2.css" />
 <link rel="shortcut icon" href="css/favicon.gif" />
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -53,7 +53,7 @@ $(function(){
 <script type="text/javascript">
 $(document).ready(function () {
     $("#dark").click(function () {
-        $('head').append('<link rel="stylesheet" href="http://bledixon.github.io/webclient/css/hub2.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="css/hub2dark.css" type="text/css" />');
     });
 });
 </script>
@@ -61,7 +61,7 @@ $(document).ready(function () {
 <script type="text/javascript">
 $(document).ready(function () {
     $("#light").click(function () {
-        $('head').append('<link rel="stylesheet" href="http://bledixon.github.io/webclient/css/hub2.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="css/hub2.css" type="text/css" />');
     });
 });
 </script>
@@ -76,15 +76,14 @@ $(document).ready(function () {
 	<table cellpadding="0" cellspacing="0" border="0"><tr><td>
 	<div id="gamebox">
 		<div id="gametitle">
-			<span class="title">Owl Realms <i>// Hub</i></span><div id="triggersmall" title="Toggle Hub"></div>
+			<span class="title">Project B <i>// Hub</i></span><div id="triggersmall" title="Toggle Hub"></div>
 		</div>
 		<div class="hline"></div>
 		<div id="gamewindow1">
   		    <script src='http://www.realmofthemadgod.com/js/rotmg.UrlLib.js'></script>
-			<embed src='http://owl120.github.io/client.swf' width='800' height='600'>
+			<embed src='http://bledixon.com/client/WebMain.swf' width='800' height='600'>
 		</div>
-		<a href="http://owl120.github.io/client.html" >Refresh game window</a>
-		<a href="http://owl120.github.io/play.html">SERVER 2</a>
+		<a href="/client.html" >Refresh game window</a>
 	</div>
 	</td><td>
 	<div id="tabbox">
@@ -93,14 +92,29 @@ $(document).ready(function () {
 			<div class="tabcontent">
 			<a name="tab1"></a>
 				<div id="tab1content">
-
+					<span class="title">Realm Hub 2.0</span>
+					<p>
+<table cellspacing="15" cellpadding="0" border="0" style="text-align:center;">
+<tr><br />
+Tabs:<br />
+<td align="center"><div id="t1" style="border:0px; float:none;"></td>
+<td align="center"><div id="t2" style="border:0px; float:none;"></td>
+<td align="center"><div id="t5" style="border:0px; float:none;"></td>
+</tr>
+<tr>
+<td>Info</td>
+<td>2nd window</td>
+<td>Classifieds</td>
+</tr>
+</table>
+</p>
 <div class="hcontline"></div>
 
 <div style="float:left;">
   <!-- <iframe name="realmfeed" style="margin-top:10px" src="http://realmtools.com/realmfeed/index.php?server=all&mode=light" width="363" height="340" frameborder="0" scrolling="no" allowtransparency="true"></iframe> -->
 </div>
 <div style="float:right; width:380px;">
-<p><br><br><br><br><br />
+<p><br />
 Modes:<br />
 <table cellspacing="15" cellpadding="0" border="0">
 <tr>
@@ -122,13 +136,32 @@ Modes:<br />
 </table>
 </p>
 <div class="hcontline" style="width:380px !important;"></div>
+<p><br /><b>PLACEHOLDER<a href="http://realmtools.com/info_qs.html" target="_blank">#1</a></b></p>
 <div class="hcontline" style="width:380px !important;"></div>
-
+<p><br />Flash player link:</p>
+<p><br />/client.swf</p>
 <div class="hcontline" style="width:380px !important;"></div>
 </div>
 				</div>
 			</div>
-			
+			<div class="tabcontent">
+			<a name="tab2"></a>
+				<iframe style="background:#fff;" name="gamewindow2" height="600" width="800" src="files/frame.html" scrolling="no" frameborder="0"></iframe>
+			<a href="files/frame.html" target="gamewindow2">Disable 2nd game window</a>
+			</div>
+			<div class="tabcontent">
+			<a name="tab3"></a>
+				<iframe style="background:#fff;" src="http://176.31.68.31/" width="800" height="600" frameborder="0" name="irc"></iframe>
+			<a href="http://176.31.68.31/" target="irc">Reload IRC</a>
+			</div>
+			<div class="tabcontent">
+			<a name="tab4"></a>
+				<!-- <iframe style="background:#fff;" name="forum" src="files/forumbrowser.html" width="800" height="620" scrolling="no" frameborder="0"></iframe> -->
+			</div>
+			<div class="tabcontent">
+			<a name="tab5"></a>
+				<!-- <iframe style="background:#fff;" name="forum" src="files/classifiedsbrowser.html" width="800" height="620" scrolling="no" frameborder="0"></iframe> -->
+			</div>
 		</div>
 	</div>
 	</td></tr></table>
@@ -138,6 +171,8 @@ Modes:<br />
 </td></td></table>
 <div id="shadow"></div>
 </center>
+<center>
 <center>	<p align="right"><iframe src="https://discordapp.com/widget?id=220339661879508992&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></p></center>
+</center>
 </body>
 </html>
